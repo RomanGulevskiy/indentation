@@ -1,0 +1,16 @@
+.figure {
+  border: 1px solid #000000;
+}
+
+.figure:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.figure__caption {
+  padding: 15px 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #5E5E5E;
+}

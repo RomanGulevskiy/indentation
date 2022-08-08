@@ -1,0 +1,41 @@
+.article__header {
+  padding: 25px 0;
+}
+
+.article__footer {
+  padding: 25px 0;
+}
+
+.article__footer-container {
+  padding-bottom: 25px;
+  background: #F1F1F1;
+  border-radius: 10px;
+}
+
+.article__footer-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  margin-bottom: 20px;
+  padding-top: 25px;
+}
+
+.article__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.article__paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.article__paragraph:not(:last-child) {
+  margin-bottom: 30px;
+}
