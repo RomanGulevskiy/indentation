@@ -19,14 +19,14 @@
         </div>
       </header>
 
-      <section class="section navigation">
-        <div class="container navigation__container">
-          <h2 class="navigation__title">Содержание:</h2>
+      <section class="section">
+        <div class="container container--content-type--list">
+          <p class="text text--size--big">Содержание:</p>
           <nav>
-            <ol class="navigation__list">
-              <li class="navigation__item"><a href="#part-1" class="navigation__link">Отступ задается от предыдущего элемента к следующему</a></li>
-              <li class="navigation__item"><a href="#part-2" class="navigation__link">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
-              <li class="navigation__item"><a href="#part-3" class="navigation__link">Для последнего элемента группы отступ обнуляется</a></li>
+            <ol class="list">
+              <li class="list__item"><a href="#part-1" class="list__link">Отступ задается от предыдущего элемента к следующему</a></li>
+              <li class="list__item"><a href="#part-2" class="list__link">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
+              <li class="list__item"><a href="#part-3" class="list__link">Для последнего элемента группы отступ обнуляется</a></li>
             </ol>
           </nav>
         </div>
@@ -39,17 +39,17 @@
           <div class="section__float-container">
             <img class="section__float-item section__image" src="assets/img/image-1.png" alt="Пример использования margin" height="415">
             <div class="section__float-item section__float-text">
-              <p class="article__paragraph"><strong>ВАЖНО:</strong> <em>margin</em> всегда задают от предыдущего элемента к следующему.</p>
-              <p class="article__paragraph">Свойство <em>margin</em> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <em>margin-right</em> и <em>margin-bottom</em>.</p>
-              <p class="article__paragraph">(!) Свойства <em>margin-left</em> и <em>margin-top</em> используются крайне редко.</p>
-              <p class="article__paragraph">Для <em>padding</em> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
+              <p class="article__paragraph"><span class="text text--style--bold">ВАЖНО:</span> <span class="text text--style--italic">margin</span> всегда задают от предыдущего элемента к следующему.</p>
+              <p class="article__paragraph">Свойство <span class="text text--style--italic">margin</span> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <span class="text text--style--italic">margin-right</span> и <span class="text text--style--italic">margin-bottom</span>.</p>
+              <p class="article__paragraph">(!) Свойства <span class="text text--style--italic">margin-left</span> и <span class="text text--style--italic">margin-top</span> используются крайне редко.</p>
+              <p class="article__paragraph">Для <span class="text text--style--italic">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
             </div>
             <div class="section__float-item section__float-text">
-              <p class="article__paragraph">Отступ внутри блока сверху или слева реализуется через <em>padding-top</em> и <em>padding-left</em> родителя.</p>
+              <p class="article__paragraph">Отступ внутри блока сверху или слева реализуется через <span class="text text--style--italic">padding-top</span> и <span class="text text--style--italic">padding-left</span> родителя.</p>
               <p class="article__paragraph">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
               <p class="article__paragraph">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
             </div>
-            <img class="section__float-container-item section__image" src="assets/img/image-2.png" alt="Пример использования padding" height="279">
+            <img class="section__float-item section__image" src="assets/img/image-2.png" alt="Пример использования padding" height="279">
           </div>
         </div>
       </section>
@@ -65,14 +65,14 @@
           <p class="article__paragraph">Отступ делают за счёт соседних элементов, а не дочерних:</p>
           <figure class="figure">
             <img class="figure__image" src="assets/img/image-5.png" alt="Пример использования отступов за счет соседних элементов" height="427">
-            <figcaption class="figure__caption"><strong>ВАЖНО:</strong> здесь <em>.list-item</em> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</figcaption>
+            <figcaption class="figure__caption"><span class="text text--style--bold">ВАЖНО:</span> здесь <span class="text text--style--italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</figcaption>
           </figure>
 
-          <p class="article__paragraph">Казалось бы, можно задать отступ параграфу <em>&lt;p&gt;</em>, либо обёртке <em>&lt;article&gt;</em>em> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
+          <p class="article__paragraph">Казалось бы, можно задать отступ параграфу <span class="text text--style--italic">&lt;p&gt;</span>, либо обёртке <span class="text text--style--italic">&lt;article&gt;</span>em> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
           <p class="article__paragraph">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
           <img class="section__image" src="assets/img/image-6.png" alt="Пример с вложенными элементами" height="164">
 
-          <p class="article__paragraph">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <em>section</em>. Именно для него задается <em>padding-top</em>, а не <em>div</em> с классом <em>container</em>. Свойства margin, которые стоят по умолчанию необходимо обнулить.</p>
+          <p class="article__paragraph">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="text text--style--italic">section</span>. Именно для него задается <span class="text text--style--italic">padding-top</span>, а не <span class="text text--style--italic">div</span> с классом <span class="text text--style--italic">container</span>. Свойства margin, которые стоят по умолчанию необходимо обнулить.</p>
           <img class="section__image" src="assets/img/image-7.png" alt="Пример использования заголовка с внутренним отступом сверху" height="504">
 
           <p class="article__paragraph">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
@@ -87,7 +87,7 @@
           <p class="article__paragraph">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
           <img class="section__image" src="assets/img/image-8.png" alt="Пример структуры с одинаковыми отступами между блоками" height="600">
 
-          <p class="article__paragraph">В соответствии со вторым принципом: последний <em>margin</em> обнуляется, а нижний отступ задаётся через <em>padding</em> для <em>section</em>. Я чаще всего задаю <em>padding</em> для секции с обеих сторон, если расстояние между секциями 100px задаю секциям <em>padding-top:50px</em> и <em>padding-bottom:50px</em>.</p>
+          <p class="article__paragraph">В соответствии со вторым принципом: последний <span class="text text--style--italic">margin</span> обнуляется, а нижний отступ задаётся через <span class="text text--style--italic">padding</span> для <span class="text text--style--italic">section</span>. Я чаще всего задаю <span class="text text--style--italic">padding</span> для секции с обеих сторон, если расстояние между секциями 100px задаю секциям <span class="text text--style--italic">padding-top:50px</span> и <span class="text text--style--italic">padding-bottom:50px</span>.</p>
           <img class="section__image" src="assets/img/image-9.png" alt="Пример использования внешних отступов для элементов и обнуления отступа у последнего элемента" height="607">
           <img class="section__image" src="assets/img/image-10.png" alt="HTML-код примера использования внешних отступов для элементов и обнуления отступа у последнего элемента" height="1058">
 
@@ -103,11 +103,12 @@
         </div>
       </section>
 
-      <footer class="article__footer">
-        <div class="container article__footer-container">
-          <h2 class="article__footer-title">Подытожим:</h2>
 
-          <ul class="list">
+      <section class="section">
+        <div class="container container--content-type--list">
+          <p class="text text--size--big">Подытожим:</p>
+
+          <ul class="list list--style-type--hyphen section__list">
             <li class="list__item">отступы задаём от предыдущего элемента к следующему</li>
             <li class="list__item">используем только margin-right и margin-bottom</li>
             <li class="list__item">внешние отступы задаются только между соседями</li>
@@ -117,7 +118,7 @@
 
           <p class="article__paragraph">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
         </div>
-      </footer>
+      </section>
     </article>
   </body>
 </html>

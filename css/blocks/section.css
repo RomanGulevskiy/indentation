@@ -23,18 +23,21 @@
 }
 
 .section__float-item {
-  width: 50%;
   float: right;
 }
 
-.section__float-item:not(:nth-child(2n)) {
+.section__float-item:not(:nth-child(even)) {
   float: left;
 }
 
-.section__float-item:nth-child(2n +1) {
+.section__float-item:nth-child(odd) {
   clear: both;
 }
 
 .section__float-text {
   width: 480px;
+}
+
+.section__list:not(:last-child) {
+  margin-bottom: 30px;
 }
